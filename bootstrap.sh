@@ -8,5 +8,5 @@ do
 	echo $e | sed 's/SNMPD_//g' | sed 0,/\=/{s/\=/\ /} >> /etc/snmp/snmpd.conf
 done
 
-/usr/sbin/snmpd -f 
+/usr/sbin/snmpd -f $@
 
